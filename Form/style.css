@@ -1,0 +1,170 @@
+/* Font */
+
+@import url('https://fonts.googleapis.com/css2?family=Exo:wght@500&display=swap');
+
+/* CSS Library */
+/* Colors */
+:root{
+    --first-hue: 250;
+    --sat: 66%;
+    --lig: 75%;
+    --sub-hue: 219;
+                    
+    --first-color: hsl(var(--first-hue), var(--sat), var(--lig)) ;
+    --bar-color: #E0E0F8;
+    --alt-color: #59429d;
+    --title-color: hsl(var(--sub-hue), 15%, 98%);
+    /*I don't like this number sorry...*/
+    --body-text-color:#2e0342;
+    --text-color: hsl(var(--sub-hue), 8%, 78%);
+    --body-color: hsl(219, 48%, 8%);
+
+    --body-font: 'Exo', sans-serif ;
+    --big-font-size: 1.75rem;
+    --h1-font-size: 1.5rem;
+    --h2-font-size: 1.25rem;
+    --h3-font-size: 1rem;
+    --base-font-size: .94rem;
+
+    --font-base: 500;
+
+}
+
+
+/* Base */
+*{
+    padding: 0;
+    margin: 0;
+}
+
+fieldset {
+    border: 0;
+}
+
+#title{
+    color: var(--title-color);
+}
+
+#check{
+    display: inline-block;
+}
+
+body{
+    font-family: var(--body-font);
+    font-size: var(--base-font-size);
+    background-color: var(--body-color);
+    color: var(--body-text-color);
+    margin-left: 38%;
+    margin-top: 5%;
+    justify-content: center;
+}
+
+h1,h2{
+    color: var(--title-color);
+    font-weight:var(--font-base);
+    font-size: var(--big-font-size);
+}
+
+p{
+    color: var(--title-color);
+    font-weight:var(--font-base);
+}
+
+h4{
+    margin-bottom: -20px;
+    color: var(--first-color);
+    font-weight:var(--font-base);
+    font-size: var(--h3-font-size);
+}
+
+
+input, 
+select,
+textarea, 
+button{
+    font-family: var(--body-font);
+    font-size: var(--base-font-size);
+    color: var(--body-text-color);
+    border-radius: 5px;
+}
+
+/* Group */
+
+.group label{
+    color: #59429d;
+}
+.group label:hover{
+    color: #95429d;
+}
+
+
+
+.group:before .group:after{
+    display: table;
+}
+
+.group:after{
+    clear: both;
+}
+
+/* Field */
+
+.field{
+    margin-bottom: 1rem;
+}
+
+.field label{
+    margin-bottom: 0.2rem;
+    color: var(--first-color);
+    display: block;
+}
+
+.fieldset.group .field{
+    float: left;
+    margin-left: 1em;
+}
+
+/* Field tags */
+
+.field input[type="text"], .field input[type="email"], .field select, .field textarea{
+    padding: 0.2rem;
+    border: 2px solid #59429d;
+    box-shadow: 2px 2px 2px rgba(0,0,0,0.2);
+    display: block;
+}
+
+.field select option{
+    padding-right: 1rem;
+}
+
+.field input:focus, .field select:focus, .field textarea:focus{
+    background: var(--bar-color);
+}
+
+/* Button */
+
+.button{
+    font-size:var(--h2-font-size);
+    background: var(--alt-color);
+    border: 0;
+    margin-bottom: var(--h3-font-size);
+    color: #fff;
+    padding: 0.2em 0.6em;
+    box-shadow: 2px 2px 2px rgba(0,0,0,0.2);
+    text-shadow: 1px 1px 1px rgba(0,0,0,0.5);
+    position: absolute;
+    top: 90%;
+    left: 49%;
+    margin-right: -20%;
+    transform: translate(-50%, -50%)
+}
+
+.button:hover{
+    background: #CCBBFF;
+    box-shadow: inset 2px 2px 2px rgba(0,0,0,0.2);
+    text-shadow: none;
+}
+
+.button, select{
+    cursor: pointer;
+}

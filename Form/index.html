@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./style.css">
+    <title>インタビュー</title>
+    <!-- Intabyū = Interview -->
+</head>
+
+<body>
+    <div>
+        <h1>プログラマー登録</h1>
+        <!-- Puroguramā tōroku = Programmer Registration -->
+        <p>あなたに関するデータを完成させる</p>
+        <!-- Anata ni kansuru dēta o kansei sa seru = Complete the data about you -->
+        <br>
+        <!-- I don't like this number sorry... -->
+    </div>
+<form>
+    <fieldset class="group">
+        <div class="field">
+            <label>名前</label>
+            <!-- Namae = Name -->
+            <input type="text" name="name" id="name">
+        </div>
+
+        <div class="field">
+            <label>苗字</label>
+            <!-- Myōji = Last Name -->
+            <input type="text" name="lastName" id="lastName">
+        </div>
+
+        <div class="field">
+            <label>Eメール</label>
+            <!--E mēru = Email -->
+            <input type="email" name="email" id="email">
+        </div>
+
+        <div class="field">
+            <label>あなたの開発者エリアは何ですか</label>
+            <!--Anata no kaihatsu-sha eria wa nandesuka -->
+            <!-- Translation to ENG in google translate is "What is your developer area"-->
+            <label>
+                <input type="radio" name="devweb" value="frontend" checked>フロントエンド
+                <!-- Furontoendo -->
+            </label>
+            <label>
+                <input type="radio" name="devweb" value="backend">バックエンド
+                <!-- Bakku endo -->
+            </label>
+            <label>
+                <input type="radio" name="devweb" value="fullstack">フルスタック
+                <!-- Furusutakku -->
+            </label>
+        </div>
+
+        <div class="field">
+            <label for="qualification"><strong>資格レベル</strong></label>
+            <!-- Shikaku reberu = Qualification Level -->
+            <select id="qualification" required>
+              <option selected disabled value="">選択する</option>
+              <!-- Sentaku suru = Select -->
+              <option>ジュニア</option>
+              <!-- Junia = Junior -->
+              <option>中間</option>
+              <!-- Chūkan = Intermediate -->
+              <option>シニア</option>
+              <!-- Shinia = Senior -->
+            </select>
+        </div>
+
+        <fieldset class="group">
+            <div id="check">
+                <h4><strong>知っているプログラミング言語を選択してください : </strong></h4><br><br>
+                <!-- Shitte iru puroguramingu gengo o sentaku shite kudasai = Choose a programming language you know -->
+                <input type="checkbox" id="language1" name="language" value="HTML">
+                <label for="language1"> HTML</label>
+                <input type="checkbox" id="language2" name="language2" value="CSS">
+                <label for="language2"> CSS</label>
+                <input type="checkbox" id="language3" name="language3" value="JavaScript">
+                <label for="language3"> JavaScript</label>
+                <input type="checkbox" id="language4" name="language4" value="PHP">
+                <label for="language4"> PHP</label>
+                <input type="checkbox" id="language5" name="language5" value="C#">
+                <label for="language5"> C#</label>
+                <input type="checkbox" id="language6" name="language6" value="Python">
+                <label for="language6"> Python</label>
+                <input type="checkbox" id="language7" name="language7" value="Java">
+                <label for="language7"> Java</label>
+            </div>
+        </fieldset>
+    </fieldset>
+
+    <div class="field">
+        <br>
+        <label for="exp"><strong>プログラミングの経験について詳しく教えてください : </strong></label>
+        <!-- Puroguramingu no keiken ni tsuite kuwashiku oshietekudasai = Tell us more about your programming experience -->
+        <textarea rows="6" style="width: 26em" id="exp" name="exp"></textarea>
+    </div>
+
+    <button class="button" type="submit" onsubmit="">終了した</button>
+    <!-- Shūryō shita = Finished -->   
+</form>
+</body>
+</html>
