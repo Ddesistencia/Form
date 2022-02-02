@@ -1,2 +1,2 @@
 # Form
-It's a Form but in Japanese
+It's a form but in Japanese, as i said, i'm in progress to learn this language and i think this is going to have some mistakes...
